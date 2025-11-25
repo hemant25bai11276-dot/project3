@@ -71,12 +71,45 @@ For example generate a random passward(e.g.,10 characters).
 The programm will dispaly a strong random passward.
 Example output: hs3$Rz5@W?
 
-### Direct example from the programm:
+## Instructions for testing
 
-Length of passward:6
-No repeatation:
-created passward:k@b5r?
- # Here is a screenshot of the output of programm
+Follow these steps to test the different functionalities of the application:
+
+Test Case 1: Generating a Password with Character Repetition
+In the GUI, enter a number for the desired length (e.g., 12).
+
+In the "Repetition?" field, enter 2 (for otherwise/allow repetition).
+
+Click the "Generate Passward" button.
+
+Expected Result: A password of length 12 should be displayed, and characters may repeat.
+
+Test Case 2: Generating a Password without Character Repetition
+In the GUI, enter a number for the desired length (e.g., 8).
+
+In the "Repetition?" field, enter 1 (for no repetition).
+
+Click the "Generate Passward" button.
+
+Expected Result: A password of length 8 should be displayed, and all characters in the password should be unique.
+
+Test Case 3: Error Handling (Missing Inputs)
+Leave both the length and Repetition? fields empty.
+
+Click the "Generate Passward" button.
+
+Expected Result: A pop-up Error message box should appear with the text: "please enter the key in the required inputs".
+
+Test Case 4: Testing Maximum Length (Without Repetition)
+The character set (character_string) has 78 unique characters.
+
+Enter a length of 79.
+
+Enter 1 for no repetition.
+
+Click "Generate Passward".
+ 
+ # Here is a screenshot of the output of an programm
 <img width="552" height="400" alt="Screenshot 2025-11-22 183119" src="https://github.com/user-attachments/assets/f4869360-9ac0-47e3-a325-ea65c416bcb0" />
 
  
